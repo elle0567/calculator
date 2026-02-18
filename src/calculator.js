@@ -1,1 +1,11 @@
-function add(a,b) { return a + b; }
+let history = [];
+
+function add(a, b) {
+    let res = a + b;
+    history.push(`${a} + ${b} = ${res}`);
+    return res;
+}
+
+function getHistory() { 
+    return history; 
+}
